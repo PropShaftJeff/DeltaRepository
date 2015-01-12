@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 14.875" name="EcnDatabase">
+  <DataContextMoniker Name="/EcnDatabaseDataContext" />
+  <nestedChildShapes>
+    <classShape Id="040c809b-f4b3-4d16-ac09-c5e9694dd217" absoluteBounds="6.5, 6.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/EcnDatabaseDataContext/EcnCheck" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0cf5caa3-2f84-432f-9531-906691ba3bd0" absoluteBounds="6.515, 7.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f2085008-042b-4558-90b6-b9a37e05c758" absoluteBounds="3.5, 2.875, 2, 1.193992513020834">
+      <DataClassMoniker Name="/EcnDatabaseDataContext/EcnStandardCheck" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b2102ba5-2a92-4245-beb4-621b4a29e9cd" absoluteBounds="3.515, 3.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f9707b0c-4e0d-4245-839f-effc665b7e2e" absoluteBounds="3.5, 10.375, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/EcnDatabaseDataContext/EcnInventoryOnHand" />
+      <nestedChildShapes>
+        <elementListCompartment Id="261de7d2-2efc-4136-b3f8-881941e74c0d" absoluteBounds="3.515, 10.835, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6d27a99d-c567-40c9-bcf1-24cdd5c23406" absoluteBounds="3.5, 8.375, 2, 1.7708968098958335">
+      <DataClassMoniker Name="/EcnDatabaseDataContext/EcnPurchaseOrder" />
+      <nestedChildShapes>
+        <elementListCompartment Id="32775c4f-c64e-49a0-bad0-c85c77d1dd42" absoluteBounds="3.515, 8.835, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="001f08b1-7614-4dcc-903f-f07019c0fb7f" absoluteBounds="3.5, 12.625, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/EcnDatabaseDataContext/EcnSalesOrder" />
+      <nestedChildShapes>
+        <elementListCompartment Id="eac7c9fe-4712-4703-be9b-2cf9286a0aef" absoluteBounds="3.515, 13.085, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 3.47199625651042); (7.5 : 3.47199625651042); (7.5 : 6.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EcnDatabaseDataContext/EcnStandardCheck/EcnStandardCheck_EcnCheck" />
+      <nodes>
+        <classShapeMoniker Id="f2085008-042b-4558-90b6-b9a37e05c758" />
+        <classShapeMoniker Id="040c809b-f4b3-4d16-ac09-c5e9694dd217" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="1a02bb56-bbd9-4c4d-bc8b-a18eca667257" absoluteBounds="0.875, 5.5, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/EcnDatabaseDataContext/EcnHeader" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0f3ab826-03af-42f4-8499-6a6a94999fc5" absoluteBounds="0.89000000000000012, 5.96, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.875 : 7.83099609375); (6.5 : 7.83099609375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/EcnDatabaseDataContext/EcnHeader/EcnHeader_EcnCheck" />
+      <nodes>
+        <classShapeMoniker Id="1a02bb56-bbd9-4c4d-bc8b-a18eca667257" />
+        <classShapeMoniker Id="040c809b-f4b3-4d16-ac09-c5e9694dd217" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.60937375 : 8.80930826822917); (1.60937375 : 11.3565991210937); (2.32291916666667 : 11.3565991210937 : JumpStart); (2.48958583333333 : 11.3565991210937 : JumpEnd); (3.5 : 11.3565991210937)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EcnDatabaseDataContext/EcnHeader/EcnHeader_EcnInventoryOnHand" />
+      <nodes>
+        <classShapeMoniker Id="1a02bb56-bbd9-4c4d-bc8b-a18eca667257" />
+        <classShapeMoniker Id="f9707b0c-4e0d-4245-839f-effc665b7e2e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.875 : 8.59215413411458); (3.5 : 8.59215413411458)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EcnDatabaseDataContext/EcnHeader/EcnHeader_EcnPurchaseOrder" />
+      <nodes>
+        <classShapeMoniker Id="1a02bb56-bbd9-4c4d-bc8b-a18eca667257" />
+        <classShapeMoniker Id="6d27a99d-c567-40c9-bcf1-24cdd5c23406" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.4062525 : 8.80930826822917); (2.4062525 : 13.6065991210937); (3.5 : 13.6065991210937)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EcnDatabaseDataContext/EcnHeader/EcnHeader_EcnSalesOrder" />
+      <nodes>
+        <classShapeMoniker Id="1a02bb56-bbd9-4c4d-bc8b-a18eca667257" />
+        <classShapeMoniker Id="001f08b1-7614-4dcc-903f-f07019c0fb7f" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="a643bb2d-1698-4dfd-9262-5893ada6bd92" absoluteBounds="3.5, 5, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/EcnDatabaseDataContext/EcnOpenWorkOrder" />
+      <nestedChildShapes>
+        <elementListCompartment Id="32730efb-c7b1-4237-bf42-6e6b2737ac8d" absoluteBounds="3.5149999999999997, 5.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.875 : 6.13544840494792); (3.5 : 6.13544840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/EcnDatabaseDataContext/EcnHeader/EcnHeader_EcnOpenWorkOrder" />
+      <nodes>
+        <classShapeMoniker Id="1a02bb56-bbd9-4c4d-bc8b-a18eca667257" />
+        <classShapeMoniker Id="a643bb2d-1698-4dfd-9262-5893ada6bd92" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

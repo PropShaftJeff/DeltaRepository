@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Engineering" Class="EcnDatabaseDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=PS002;Initial Catalog=Engineering;User ID=sa" SettingsObjectName="PSS.Delta.Properties.Settings" SettingsPropertyName="EngineeringConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.EcnChecks" Member="EcnChecks">
+    <Type Name="EcnCheck">
+      <Column Name="EcnId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="StandardCheckId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Completed" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Notes" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Association Name="EcnStandardCheck_EcnCheck" Member="EcnStandardCheck" ThisKey="StandardCheckId" OtherKey="Id" Type="EcnStandardCheck" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="EcnHeader_EcnCheck" Member="EcnHeader" ThisKey="EcnId" OtherKey="Id" Type="EcnHeader" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EcnStandardChecks" Member="EcnStandardChecks">
+    <Type Name="EcnStandardCheck">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ItemToCheck" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Association Name="EcnStandardCheck_EcnCheck" Member="EcnChecks" ThisKey="Id" OtherKey="StandardCheckId" Type="EcnCheck" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EcnInventoryOnHand" Member="EcnInventoryOnHands">
+    <Type Name="EcnInventoryOnHand">
+      <Column Name="EcnId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PartId" Type="System.String" DbType="NVarChar(160) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LocationId" Type="System.String" DbType="NVarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="QtyOnHand" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="Notes" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Reworkable" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="EcnHeader_EcnInventoryOnHand" Member="EcnHeader" ThisKey="EcnId" OtherKey="Id" Type="EcnHeader" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EcnPurchaseOrders" Member="EcnPurchaseOrders">
+    <Type Name="EcnPurchaseOrder">
+      <Column Name="EcnId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PurchaseId" Type="System.String" DbType="NVarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PurchaseLineNo" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="WasContacted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ContactId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="EcnHeader_EcnPurchaseOrder" Member="EcnHeader" ThisKey="EcnId" OtherKey="Id" Type="EcnHeader" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EcnSalesOrders" Member="EcnSalesOrders">
+    <Type Name="EcnSalesOrder">
+      <Column Name="EcnId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SalesId" Type="System.String" DbType="NVarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SalesLineNo" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DrawingId" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="DrawingRevision" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Association Name="EcnHeader_EcnSalesOrder" Member="EcnHeader" ThisKey="EcnId" OtherKey="Id" Type="EcnHeader" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EcnHeader" Member="EcnHeaders">
+    <Type Name="EcnHeader">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="EcnNumber" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DateCreated" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LastModified" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LastModifiedBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PartNumber" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="PartDescription" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="CustomerPartNumber" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="Customer" Type="System.String" DbType="NVarChar(41)" CanBeNull="true" />
+      <Column Name="PssRevision" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="CustomerRevision" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="EcnHeader_EcnCheck" Member="EcnChecks" ThisKey="Id" OtherKey="EcnId" Type="EcnCheck" />
+      <Association Name="EcnHeader_EcnInventoryOnHand" Member="EcnInventoryOnHands" ThisKey="Id" OtherKey="EcnId" Type="EcnInventoryOnHand" />
+      <Association Name="EcnHeader_EcnPurchaseOrder" Member="EcnPurchaseOrders" ThisKey="Id" OtherKey="EcnId" Type="EcnPurchaseOrder" />
+      <Association Name="EcnHeader_EcnSalesOrder" Member="EcnSalesOrders" ThisKey="Id" OtherKey="EcnId" Type="EcnSalesOrder" />
+      <Association Name="EcnHeader_EcnOpenWorkOrder" Member="EcnOpenWorkOrders" ThisKey="Id" OtherKey="EcnId" Type="EcnOpenWorkOrder" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EcnOpenWorkOrders" Member="EcnOpenWorkOrders">
+    <Type Name="EcnOpenWorkOrder">
+      <Column Name="EcnId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="WorkId" Type="System.String" DbType="NVarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ChangeDescription" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DateChangeMade" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ChangeMadeBy" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="EcnHeader_EcnOpenWorkOrder" Member="EcnHeader" ThisKey="EcnId" OtherKey="Id" Type="EcnHeader" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 23.625, 42.5" name="VjsDatabase">
+  <DataContextMoniker Name="/VjsDatabaseDataContext" />
+  <nestedChildShapes>
+    <classShape Id="387725cd-3e57-4e78-89d6-9d56a2d73427" absoluteBounds="0.75, 0.75, 2, 21.001040039062502">
+      <DataClassMoniker Name="/VjsDatabaseDataContext/SHOPFLOOR_MATERIAL" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fa915c17-4625-4c25-bb83-b9f8b723b87c" absoluteBounds="0.765, 1.21, 1.9700000000000002, 20.4410400390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e6505d56-b9c3-4897-8f2e-f3f45bda553c" absoluteBounds="3.75, 0.75, 2, 19.847231445312502">
+      <DataClassMoniker Name="/VjsDatabaseDataContext/SHOPFLOOR_OPERATION" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d74c0cf1-540f-4b9f-976d-2dc667e381ef" absoluteBounds="3.765, 1.21, 1.9700000000000002, 19.2872314453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e3802098-b1b7-4ef3-91e1-f6bcada17c0f" absoluteBounds="6.75, 0.75, 2, 17.924217122395834">
+      <DataClassMoniker Name="/VjsDatabaseDataContext/SHOPFLOOR_WORK_ORDER" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7f0a8680-f81c-4691-b3b0-53a85eec00fb" absoluteBounds="6.765, 1.21, 1.9700000000000002, 17.364217122395832" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d767e43c-92cb-4174-81ae-46a2a7e686e0" absoluteBounds="9.375, 0.75, 2, 16.385805664062502">
+      <DataClassMoniker Name="/VjsDatabaseDataContext/SALES_SALES_ORDER" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0a0d59ac-2a3f-4b76-9458-c900e9156c1e" absoluteBounds="9.39, 1.21, 1.9700000000000002, 15.8258056640625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4284f31f-d8b0-4dee-b56c-e463ae2629a4" absoluteBounds="12.375, 0.75, 2, 16.193504231770834">
+      <DataClassMoniker Name="/VjsDatabaseDataContext/SALES_ORDER_LINE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2fdba2c6-e0bc-4bd2-8cb8-2009b6de2a46" absoluteBounds="12.39, 1.21, 1.9700000000000002, 15.633504231770832" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="546ffa5d-7eca-4bc8-9554-067eded07a24" absoluteBounds="15.375, 0.75, 2, 16.385805664062502">
+      <DataClassMoniker Name="/VjsDatabaseDataContext/PURCHASING_ORDER_LINE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fd810fa3-c201-48b5-a7ac-ff2798294c36" absoluteBounds="15.39, 1.21, 1.9700000000000002, 15.8258056640625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9a1735e6-1a45-43fe-a1d5-2ea0a4458b47" absoluteBounds="18.375, 0.75, 2, 15.424298502604163">
+      <DataClassMoniker Name="/VjsDatabaseDataContext/PURCHASING_PURCHASE_ORDER" />
+      <nestedChildShapes>
+        <elementListCompartment Id="88b1150e-f315-4fbf-8574-7eae2747feff" absoluteBounds="18.39, 1.21, 1.9700000000000002, 14.864298502604166" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4c3baec3-5efd-4f36-83ef-a296f4f3ac72" absoluteBounds="9.375, 18.75, 2, 3.1170068359375023">
+      <DataClassMoniker Name="/VjsDatabaseDataContext/INVENTORY_PART_LOCATION" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3f70505d-3d05-4097-8ced-c2cb0a205937" absoluteBounds="9.39, 19.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6b3553bf-81a4-4796-b355-5ffc571ff0ab" absoluteBounds="12.375, 18.75, 2, 23.500958658854167">
+      <DataClassMoniker Name="/VjsDatabaseDataContext/INVENTORY_PART" />
+      <nestedChildShapes>
+        <elementListCompartment Id="188e37e4-3169-44ad-b119-dca3ff77508c" absoluteBounds="12.39, 19.21, 1.9700000000000002, 22.940958658854164" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a63d80a1-404c-4b05-9958-6e70eb82e9e5" absoluteBounds="15.375, 18.75, 2, 14.655092773437502">
+      <DataClassMoniker Name="/VjsDatabaseDataContext/ENGINEERING_OPERATION" />
+      <nestedChildShapes>
+        <elementListCompartment Id="305f9706-14c0-40ef-9f4f-78660344aca0" absoluteBounds="15.39, 19.21, 1.9700000000000002, 14.0950927734375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="594fb659-ef6a-4065-bf63-2b2da8da8187" absoluteBounds="18.375, 17.75, 2, 17.924217122395831">
+      <DataClassMoniker Name="/VjsDatabaseDataContext/ENGINEERING_MATERIAL" />
+      <nestedChildShapes>
+        <elementListCompartment Id="38029bf6-c727-447a-bfeb-f315f8c4b2a9" absoluteBounds="18.39, 18.21, 1.9700000000000002, 17.364217122395832" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="66081323-d420-49d7-b554-cee24bb4ab3c" absoluteBounds="21.375, 0.75, 2, 13.885887044270831">
+      <DataClassMoniker Name="/VjsDatabaseDataContext/ENGINEERING_MASTER" />
+      <nestedChildShapes>
+        <elementListCompartment Id="675722d6-fd0a-4014-a6d4-a69f27006325" absoluteBounds="21.39, 1.21, 1.9700000000000002, 13.325887044270832" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

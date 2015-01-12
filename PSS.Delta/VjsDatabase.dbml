@@ -1,0 +1,1021 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="vjs2013" Class="VjsDatabaseDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=PS001;Initial Catalog=vjs2013;Integrated Security=True" SettingsObjectName="PSS.Delta.Properties.Settings" SettingsPropertyName="vjs2013ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.SHOPFLOOR_MATERIAL" Member="SHOPFLOOR_MATERIALs">
+    <Type Name="SHOPFLOOR_MATERIAL">
+      <Column Name="RECORD_IDENTITY" Type="System.String" DbType="NVarChar(12) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RECORD_CREATED" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RECORD_MODIFIED" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RECORD_USER" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="RECORD_VERSION" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="WORK_ID" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="LOT_ID" Type="System.String" DbType="NVarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="SPLIT_ID" Type="System.String" DbType="NVarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="SUB_ID" Type="System.String" DbType="NVarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="SEQ_NO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PIECE_NO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SUBORD_WORK_ID" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="SUBORD_LOT_ID" Type="System.String" DbType="NVarChar(3)" CanBeNull="true" />
+      <Column Name="SUBORD_SPLIT_ID" Type="System.String" DbType="NVarChar(3)" CanBeNull="true" />
+      <Column Name="SUBORD_SUB_ID" Type="System.String" DbType="NVarChar(4)" CanBeNull="true" />
+      <Column Name="MATERIAL_STATUS" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Column Name="ISSUED_QTY" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="REQUIRED_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CLOSED_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SUBORD_PART_ID" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="SUBORD_ENG_ID" Type="System.String" DbType="NVarChar(80)" CanBeNull="true" />
+      <Column Name="DESCRIPTION" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="REFERENCE" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="QTY_PER" Type="System.Decimal" DbType="Decimal(15,8)" CanBeNull="true" />
+      <Column Name="QTY_PER_TYPE" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Column Name="FIXED_QTY" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="SCRAP_PERCENT" Type="System.Decimal" DbType="Decimal(10,6)" CanBeNull="true" />
+      <Column Name="DIMENSIONS" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="DIM_CONSTANT" Type="System.Decimal" DbType="Decimal(15,8)" CanBeNull="true" />
+      <Column Name="USAGE_UM" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="EFFECTIVE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DISCONTINUE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CALC_QTY" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="UNIT_MAT_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="UNIT_LAB_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="UNIT_BUR_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="UNIT_SER_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="FIXED_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="BURDEN_PERCENT" Type="System.Decimal" DbType="Decimal(10,6)" CanBeNull="true" />
+      <Column Name="BURDEN_PER_UNIT" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="UNIT_PRICE" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="DRAWING_ID" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="DRAWING_REV_NO" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="DRAWING_PAGE_NO" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="DRAWING_FILE" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="SUPPLIER_ID" Type="System.String" DbType="NVarChar(41)" CanBeNull="true" />
+      <Column Name="SUPPLIER_PART_ID" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="MFG_NAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MFG_PART_ID" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="PRIVATE_COSTS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LENGTH" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="WIDTH" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="HEIGHT" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="EST_MAT_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="EST_LAB_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="EST_BUR_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="EST_SER_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="SPECIFICATIONS" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="HAS_SPECIFICATIONS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TOOL_OR_FIXTURE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AUTO_ISSUE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="PHANTOM" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="REM_MAT_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="REM_LAB_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="REM_BUR_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="REM_SER_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="ACT_MAT_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="ACT_LAB_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="ACT_BUR_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="ACT_SER_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="USER_0" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_1" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_2" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_3" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_4" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_5" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_6" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_7" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_8" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_9" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_10" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_11" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_12" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_13" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_14" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_15" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_16" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_17" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_18" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_19" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_20" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_21" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_22" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_23" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_24" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_25" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_26" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_27" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_28" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_29" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_30" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_31" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_32" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_33" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SHOPFLOOR_OPERATION" Member="SHOPFLOOR_OPERATIONs">
+    <Type Name="SHOPFLOOR_OPERATION">
+      <Column Name="RECORD_IDENTITY" Type="System.String" DbType="NVarChar(12) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RECORD_CREATED" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RECORD_MODIFIED" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RECORD_USER" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="RECORD_VERSION" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="WORK_ID" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="LOT_ID" Type="System.String" DbType="NVarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="SPLIT_ID" Type="System.String" DbType="NVarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="SUB_ID" Type="System.String" DbType="NVarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="SEQ_NO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RESOURCE_ID" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="DESCRIPTION" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="SETUP_HRS" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="RUN_EXPR" Type="System.Decimal" DbType="Decimal(15,8)" CanBeNull="true" />
+      <Column Name="RUN_TYPE" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Column Name="LOAD_SIZE_QTY" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="RUN_HRS" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="MOVE_HRS" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="DIMENSIONS" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="TRANSIT_DAYS" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="SERVICE_ID" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="SCRAP_YIELD_PCT" Type="System.Decimal" DbType="Decimal(10,6)" CanBeNull="true" />
+      <Column Name="SCRAP_YIELD_TYPE" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Column Name="FIXED_SCRAP_UNITS" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="MINIMUM_MOVE_QTY" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="CALC_START_QTY" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="CALC_END_QTY" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="USER_START_QTY" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="USER_END_QTY" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="OPER_TEMPLATE_ID" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="DRAWING_ID" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="DRAWING_REV_NO" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="DRAWING_PAGE_NO" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="DRAWING_FILE" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="BEGIN_TRACEABILITY" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CAPACITY_USAGE_MAX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="CAPACITY_USAGE_MIN" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="SPC_QTY" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="SETUP_PER_HR" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="RUN_PER_HR" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="RUN_PER_UNIT" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="RUN_PER_OPER" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="BUR_PER_HR_SETUP" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="BUR_PER_HR_RUN" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="BUR_PER_UNIT_RUN" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="BUR_PERCENT_SETUP" Type="System.Decimal" DbType="Decimal(10,6)" CanBeNull="true" />
+      <Column Name="BUR_PERCENT_RUN" Type="System.Decimal" DbType="Decimal(10,6)" CanBeNull="true" />
+      <Column Name="BUR_PER_OPER" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="EST_ATL_LAB_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="EST_ATL_BUR_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="EST_ATL_SER_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="EST_TTL_MAT_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="EST_TTL_LAB_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="EST_TTL_BUR_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="EST_TTL_SER_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="SCHEDULE_TYPE" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Column Name="MIN_SEGMENT_SIZE" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="PRIVATE_COSTS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SPECIFICATIONS" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="HAS_SPECIFICATIONS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SUPPLIER_ID" Type="System.String" DbType="NVarChar(41)" CanBeNull="true" />
+      <Column Name="SUPPLIER_SERVICE_ID" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="COMPLETED_QTY" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="DEVIATED_QTY" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="ACT_SETUP_HRS" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="ACT_RUN_HRS" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="SETUP_COMPLETED" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OPERATION_STATUS" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Column Name="SERVICE_BEGIN_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="START_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FINISH_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="COULD_FINISH_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DETERMINANT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CLOSED_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="REM_ATL_LAB_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="REM_ATL_BUR_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="REM_ATL_SER_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="ACT_ATL_LAB_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="ACT_ATL_BUR_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="ACT_ATL_SER_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="REM_TTL_MAT_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="REM_TTL_LAB_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="REM_TTL_BUR_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="REM_TTL_SER_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="ACT_TTL_MAT_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="ACT_TTL_LAB_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="ACT_TTL_BUR_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="ACT_TTL_SER_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="USER_0" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_1" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_2" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_3" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_4" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_5" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_6" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_7" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_8" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_9" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SHOPFLOOR_WORK_ORDER" Member="SHOPFLOOR_WORK_ORDERs">
+    <Type Name="SHOPFLOOR_WORK_ORDER">
+      <Column Name="RECORD_IDENTITY" Type="System.String" DbType="NVarChar(12) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RECORD_CREATED" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RECORD_MODIFIED" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RECORD_USER" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="RECORD_VERSION" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="WORK_ID" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="LOT_ID" Type="System.String" DbType="NVarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="SPLIT_ID" Type="System.String" DbType="NVarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="SUB_ID" Type="System.String" DbType="NVarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="PART_ID" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="DESCRIPTION" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="GLOBAL_RANK" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="DESIRED_QTY" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="ENGINEERED_BY" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="ENGINEERED_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DRAWING_ID" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="DRAWING_REV_NO" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="DRAWING_FILE" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DRAWING_PAGE_NO" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="PRODUCT_CODE" Type="System.String" DbType="NVarChar(31)" CanBeNull="true" />
+      <Column Name="COMMODITY_CODE" Type="System.String" DbType="NVarChar(31)" CanBeNull="true" />
+      <Column Name="FORWARD_SCHEDULE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ACCOUNT_SET_ID" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="EST_MAT_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="EST_LAB_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="EST_BUR_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="EST_SER_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="VARIABLE_TABLE" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="SPECIFICATIONS" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="BITMAP" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="HAS_SPECIFICATIONS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HAS_BITMAP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DIRTY" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ENG_ID" Type="System.String" DbType="NVarChar(80)" CanBeNull="true" />
+      <Column Name="DESIRED_RLS_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DESIRED_WANT_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RECEIVED_QTY" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="CLOSED_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="COSTED_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ORDER_STATUS" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Column Name="COSTER_FLAGS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ACT_MAT_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="ACT_LAB_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="ACT_BUR_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="ACT_SER_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="REM_MAT_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="REM_LAB_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="REM_BUR_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="REM_SER_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="PRINTED_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SCHED_START_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SCHED_FINISH_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ARCHIVED" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DATA_FLAGS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="USER_0" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_1" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_2" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_3" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_4" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_5" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_6" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_7" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_8" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_9" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_10" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_11" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_12" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_13" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_14" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_15" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_16" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_17" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_18" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_19" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_20" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_21" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_22" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_23" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_24" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_25" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_26" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_27" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_28" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_29" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_30" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_31" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_32" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_33" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SALES_SALES_ORDER" Member="SALES_SALES_ORDERs">
+    <Type Name="SALES_SALES_ORDER">
+      <Column Name="RECORD_IDENTITY" Type="System.String" DbType="NVarChar(12) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RECORD_CREATED" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RECORD_MODIFIED" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RECORD_USER" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="RECORD_VERSION" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ID" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="QUOTE_ID" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="CUSTOMER_ID" Type="System.String" DbType="NVarChar(41)" CanBeNull="true" />
+      <Column Name="NAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ADDR_1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ADDR_2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CITY" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="STATE" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="POSTAL_CODE" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="COUNTRY" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ADDR_ETC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ADDR_FORMAT" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Column Name="CONTACT_NAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CONTACT_TITLE" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CONTACT_PHONE" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="CONTACT_FAX" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="CONTACT_EMAIL" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="CONTACT_MOBILE" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="SHIPTO_NAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SHIPTO_ADDR_1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SHIPTO_ADDR_2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SHIPTO_CITY" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="SHIPTO_STATE" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="SHIPTO_POSTAL_CODE" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="SHIPTO_COUNTRY" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SHIPTO_ADDR_ETC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SHIPTO_ADDR_FORMAT" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Column Name="SHIPTO_CONTACT_NAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SHIPTO_CONTACT_TITLE" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SHIPTO_CONTACT_PHONE" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="SHIPTO_CONTACT_FAX" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="SHIPTO_CONTACT_EMAIL" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="SHIPTO_CONTACT_MOBILE" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="CUSTOMER_PO_REF" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SALESREP_ID" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="TERRITORY" Type="System.String" DbType="NVarChar(31)" CanBeNull="true" />
+      <Column Name="DISCOUNT_CLASS_ID" Type="System.String" DbType="NVarChar(31)" CanBeNull="true" />
+      <Column Name="ORDER_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DESIRED_SHIP_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ORDER_STATUS" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Column Name="LAST_SHIPPED_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PROMISE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PRINTED_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SHIPTO_ADDR_NO" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="FOB_POINT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SHIP_VIA" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TERMS_RULE_ID" Type="System.String" DbType="NVarChar(31)" CanBeNull="true" />
+      <Column Name="FREIGHT_TERMS" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Column Name="TAX_GROUP_ID" Type="System.String" DbType="NVarChar(31)" CanBeNull="true" />
+      <Column Name="ORDER_AMOUNT" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="SHIPPED_AMOUNT" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="BILLED_AMOUNT" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="APPLIED_BILLED_AMOUNT" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="SPECIFICATIONS" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="CARRIER_ID" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="HAS_SPECIFICATIONS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RECV_GL_ACCT_ID" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="ALT_CURRENCY_ID" Type="System.String" DbType="NVarChar(3)" CanBeNull="true" />
+      <Column Name="ALT_CURRENCY_EXCHANGE_RATE" Type="System.Decimal" DbType="Decimal(15,8)" CanBeNull="true" />
+      <Column Name="ALT_CURRENCY_ORDER_AMOUNT" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="COPY_NOTES" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ARCHIVED" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SO_FOOTER" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="HAS_SO_FOOTER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DATA_FLAGS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="USER_0" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_1" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_2" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_3" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_4" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_5" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_6" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_7" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_8" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_9" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SALES_ORDER_LINE" Member="SALES_ORDER_LINEs">
+    <Type Name="SALES_ORDER_LINE">
+      <Column Name="RECORD_IDENTITY" Type="System.String" DbType="NVarChar(12) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RECORD_CREATED" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RECORD_MODIFIED" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RECORD_USER" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="RECORD_VERSION" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SALES_ID" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="LINE_NO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PART_ID" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="DESCRIPTION" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="CUSTOMER_PO_LINE_NO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CUSTOMER_PART_ID" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="LINE_STATUS" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Column Name="USER_ORDER_QTY" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="ORDER_QTY" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="SELLING_UM" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="LENGTH" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="WIDTH" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="HEIGHT" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="DIMENSIONS_UM" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="UNIT_PRICE" Type="System.Decimal" DbType="Decimal(15,4)" CanBeNull="true" />
+      <Column Name="TRADE_DISC_PERCENT" Type="System.Decimal" DbType="Decimal(10,6)" CanBeNull="true" />
+      <Column Name="TAX_GROUP_ID" Type="System.String" DbType="NVarChar(31)" CanBeNull="true" />
+      <Column Name="TAX_EXEMPT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DESIRED_SHIP_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PRODUCT_CODE" Type="System.String" DbType="NVarChar(31)" CanBeNull="true" />
+      <Column Name="COMMODITY_CODE" Type="System.String" DbType="NVarChar(31)" CanBeNull="true" />
+      <Column Name="DRAWING_ID" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="DRAWING_REV_NO" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="SHIPTO_ADDR_NO" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="SHIP_DIMENSIONS" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="REV_GL_ACCT_ID" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="ACCOUNT_SET_ID" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="PROMISE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LAST_SHIPPED_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="USER_SHIPPED_QTY" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="SHIPPED_QTY" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="ORDER_AMOUNT" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="SHIPPED_AMOUNT" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="BILLED_AMOUNT" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="APPLIED_BILLED_AMOUNT" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="SPECIFICATIONS" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="HAS_SPECIFICATIONS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ALT_CURRENCY_UNIT_PRICE" Type="System.Decimal" DbType="Decimal(15,4)" CanBeNull="true" />
+      <Column Name="ALT_CURRENCY_ORDER_AMOUNT" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="COMMISSIONABLE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="COMMISSION_PERCENT" Type="System.Decimal" DbType="Decimal(10,6)" CanBeNull="true" />
+      <Column Name="USER_0" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_1" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_2" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_3" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_4" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_5" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_6" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_7" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_8" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_9" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_10" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_11" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_12" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_13" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_14" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_15" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_16" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_17" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_18" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_19" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_20" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_21" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_22" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_23" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_24" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_25" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_26" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_27" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_28" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_29" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_30" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_31" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_32" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_33" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PURCHASING_ORDER_LINE" Member="PURCHASING_ORDER_LINEs">
+    <Type Name="PURCHASING_ORDER_LINE">
+      <Column Name="RECORD_IDENTITY" Type="System.String" DbType="NVarChar(12) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RECORD_CREATED" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RECORD_MODIFIED" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RECORD_USER" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="RECORD_VERSION" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PURCHASE_ID" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="RFQ_ID" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="RFQ_LINE_NO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LINE_NO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PO_LINE_TYPE" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Column Name="LINE_STATUS" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Column Name="PART_ID" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="DESCRIPTION" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="SUPPLIER_PART_ID" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="MFG_NAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MFG_PART_ID" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="SERVICE_ID" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="SUPPLIER_SERVICE_ID" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="USER_ORDER_QTY" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="ORDER_QTY" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="PURCHASE_UM" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="LENGTH" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="WIDTH" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="HEIGHT" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="DIMENSIONS_UM" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="UNIT_PRICE" Type="System.Decimal" DbType="Decimal(15,4)" CanBeNull="true" />
+      <Column Name="TRADE_DISC_PERCENT" Type="System.Decimal" DbType="Decimal(10,6)" CanBeNull="true" />
+      <Column Name="FIXED_CHARGE" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="TAX_GROUP_ID" Type="System.String" DbType="NVarChar(31)" CanBeNull="true" />
+      <Column Name="PRODUCT_CODE" Type="System.String" DbType="NVarChar(31)" CanBeNull="true" />
+      <Column Name="COMMODITY_CODE" Type="System.String" DbType="NVarChar(31)" CanBeNull="true" />
+      <Column Name="DESIRED_RECV_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LAST_RECEIVED_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PROMISE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EXP_GL_ACCT_ID" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="ACCOUNT_SET_ID" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="USER_RECEIVED_QTY" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="RECEIVED_QTY" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="ORDER_AMOUNT" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="RECEIVED_AMOUNT" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="SPECIFICATIONS" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="HAS_SPECIFICATIONS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ALT_CURRENCY_UNIT_PRICE" Type="System.Decimal" DbType="Decimal(15,4)" CanBeNull="true" />
+      <Column Name="ALT_CURRENCY_FIXED_CHARGE" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="ALT_CURRENCY_ORDER_AMOUNT" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="USER_0" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_1" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_2" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_3" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_4" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_5" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_6" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_7" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_8" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_9" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_10" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_11" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_12" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_13" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_14" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_15" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_16" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_17" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_18" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_19" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_20" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_21" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_22" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_23" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_24" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_25" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_26" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_27" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_28" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_29" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_30" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_31" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_32" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_33" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DRAWING_ID" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="DRAWING_REV_NO" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PURCHASING_PURCHASE_ORDER" Member="PURCHASING_PURCHASE_ORDERs">
+    <Type Name="PURCHASING_PURCHASE_ORDER">
+      <Column Name="RECORD_IDENTITY" Type="System.String" DbType="NVarChar(12) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RECORD_CREATED" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RECORD_MODIFIED" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RECORD_USER" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="RECORD_VERSION" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ID" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="SUPPLIER_ID" Type="System.String" DbType="NVarChar(41)" CanBeNull="true" />
+      <Column Name="RFQ_ID" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="SUPPLIER_QUOTE_REF" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ADDR_1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ADDR_2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CITY" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="STATE" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="POSTAL_CODE" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="COUNTRY" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ADDR_ETC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ADDR_FORMAT" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Column Name="CONTACT_NAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CONTACT_TITLE" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CONTACT_PHONE" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="CONTACT_FAX" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="CONTACT_EMAIL" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="CONTACT_MOBILE" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="SHIPTO_NAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SHIPTO_ADDR_1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SHIPTO_ADDR_2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SHIPTO_CITY" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="SHIPTO_STATE" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="SHIPTO_POSTAL_CODE" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="SHIPTO_COUNTRY" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SHIPTO_ADDR_ETC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SHIPTO_ADDR_FORMAT" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Column Name="SHIPTO_CONTACT_NAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SHIPTO_CONTACT_TITLE" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SHIPTO_CONTACT_PHONE" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="SHIPTO_CONTACT_FAX" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="SHIPTO_CONTACT_EMAIL" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="SHIPTO_CONTACT_MOBILE" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="SHIPTO_ADDR_NO" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ORDER_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DESIRED_RECV_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="BUYER" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="FOB_POINT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SHIP_VIA" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TERMS_RULE_ID" Type="System.String" DbType="NVarChar(31)" CanBeNull="true" />
+      <Column Name="ORDER_STATUS" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Column Name="TAX_GROUP_ID" Type="System.String" DbType="NVarChar(31)" CanBeNull="true" />
+      <Column Name="LAST_RECEIVED_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PROMISE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PRINTED_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ORDER_AMOUNT" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="RECEIVED_AMOUNT" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="SPECIFICATIONS" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="HAS_SPECIFICATIONS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FREIGHT_TERMS" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Column Name="PAYB_GL_ACCT_ID" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="ALT_CURRENCY_ID" Type="System.String" DbType="NVarChar(3)" CanBeNull="true" />
+      <Column Name="ALT_CURRENCY_EXCHANGE_RATE" Type="System.Decimal" DbType="Decimal(15,8)" CanBeNull="true" />
+      <Column Name="ALT_CURRENCY_ORDER_AMOUNT" Type="System.Decimal" DbType="Decimal(15,2)" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="COPY_NOTES" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PO_FOOTER" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="HAS_PO_FOOTER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ARCHIVED" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DATA_FLAGS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="USER_0" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_1" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_2" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_3" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_4" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_5" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_6" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_7" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_8" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_9" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.INVENTORY_PART_LOCATION" Member="INVENTORY_PART_LOCATIONs">
+    <Type Name="INVENTORY_PART_LOCATION">
+      <Column Name="RECORD_IDENTITY" Type="System.String" DbType="NVarChar(12) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RECORD_CREATED" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RECORD_MODIFIED" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RECORD_USER" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="RECORD_VERSION" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PART_ID" Type="System.String" DbType="NVarChar(160) NOT NULL" CanBeNull="false" />
+      <Column Name="WAREHOUSE_ID" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="LOCATION_ID" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="QTY_ON_HAND" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="HOLD" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NETTABLE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="INACTIVE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.INVENTORY_PART" Member="INVENTORY_PARTs">
+    <Type Name="INVENTORY_PART">
+      <Column Name="RECORD_IDENTITY" Type="System.String" DbType="NVarChar(12) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RECORD_CREATED" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RECORD_MODIFIED" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RECORD_USER" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="RECORD_VERSION" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ID" Type="System.String" DbType="NVarChar(160) NOT NULL" CanBeNull="false" />
+      <Column Name="DESCRIPTION" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="STOCK_UM" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="WEIGHT" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="WEIGHT_UM" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="SELLING_UM" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="PURCHASE_UM" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="USAGE_UM" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="PLANNING_LEADTIME" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ENG_ID" Type="System.String" DbType="NVarChar(80)" CanBeNull="true" />
+      <Column Name="PRODUCT_CODE" Type="System.String" DbType="NVarChar(31)" CanBeNull="true" />
+      <Column Name="COMMODITY_CODE" Type="System.String" DbType="NVarChar(31)" CanBeNull="true" />
+      <Column Name="MFG_NAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MFG_PART_ID" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="FABRICATED" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PURCHASED" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="STOCKED" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LOT_TRACKED" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DATE_TRACKED" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CONSUMABLE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SAFETY_STOCK_QTY" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="ORDER_POINT" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="MAXIMUM_STOCK_QTY" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="MINIMUM_ORDER_QTY" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="MAXIMUM_ORDER_QTY" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="MULTIPLE_ORDER_QTY" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="TOOL_OR_FIXTURE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AUTO_ISSUE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DRAWING_ID" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="DRAWING_REV_NO" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="DRAWING_FILE" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="PREF_SUPPLIER_ID" Type="System.String" DbType="NVarChar(41)" CanBeNull="true" />
+      <Column Name="PREF_SUPPLIER_ID_2" Type="System.String" DbType="NVarChar(41)" CanBeNull="true" />
+      <Column Name="PREF_SUPPLIER_ID_3" Type="System.String" DbType="NVarChar(41)" CanBeNull="true" />
+      <Column Name="PREF_SUPPLIER_ID_4" Type="System.String" DbType="NVarChar(41)" CanBeNull="true" />
+      <Column Name="PREF_SUPPLIER_ID_5" Type="System.String" DbType="NVarChar(41)" CanBeNull="true" />
+      <Column Name="PRIMARY_WHS_ID" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="PRIMARY_LOC_ID" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="AUTOISSUE_WHS_ID" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="AUTOISSUE_LOC_ID" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="UNIT_MAT_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="UNIT_LAB_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="UNIT_BUR_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="UNIT_SER_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="FIXED_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="BURDEN_PERCENT" Type="System.Decimal" DbType="Decimal(10,6)" CanBeNull="true" />
+      <Column Name="BURDEN_PER_UNIT" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="PURC_BUR_PERCENT" Type="System.Decimal" DbType="Decimal(10,6)" CanBeNull="true" />
+      <Column Name="PURC_BUR_PER_UNIT" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="UNIT_PRICE" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="ACCOUNT_SET_ID" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="PIECE_TRACKED" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LENGTH_REQD" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="WIDTH_REQD" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HEIGHT_REQD" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DIMENSIONS_UM" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="SHIP_DIMENSIONS" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="SPECIFICATIONS" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="BITMAP" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="HAS_SPECIFICATIONS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HAS_BITMAP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="USER_0" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_1" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_2" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_3" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_4" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_5" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_6" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_7" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_8" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_9" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_10" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_11" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_12" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_13" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_14" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_15" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_16" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_17" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_18" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_19" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_20" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_21" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_22" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_23" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_24" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_25" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_26" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_27" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_28" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_29" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_30" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_31" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_32" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_33" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="INACTIVE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TAX_GROUP_ID" Type="System.String" DbType="NVarChar(31)" CanBeNull="true" />
+      <Column Name="AUTO_NUMBER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EXP_GL_ACCT_ID" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="PREFIX" Type="System.String" DbType="NVarChar(4)" CanBeNull="true" />
+      <Column Name="NEXT_NUMBER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SUFFIX" Type="System.String" DbType="NVarChar(4)" CanBeNull="true" />
+      <Column Name="LEADING_ZEROS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DECIMAL_PLACES" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="PRIVATE_UNIT_PRICE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PRIVATE_UNIT_COSTS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="QUOTE_INSTRUCTIONS" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="SALES_INSTRUCTIONS" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="RFQ_INSTRUCTIONS" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="PURCHASING_INSTRUCTIONS" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="UPDATE_COSTS_FROM_PO" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Column Name="COMMISSIONABLE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ENGINEERING_OPERATION" Member="ENGINEERING_OPERATIONs">
+    <Type Name="ENGINEERING_OPERATION">
+      <Column Name="RECORD_IDENTITY" Type="System.String" DbType="NVarChar(12) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RECORD_CREATED" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RECORD_MODIFIED" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RECORD_USER" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="RECORD_VERSION" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PART_ID" Type="System.String" DbType="NVarChar(160) NOT NULL" CanBeNull="false" />
+      <Column Name="ENG_ID" Type="System.String" DbType="NVarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="SUB_ID" Type="System.String" DbType="NVarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="SEQ_NO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RESOURCE_ID" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="DESCRIPTION" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="SETUP_HRS" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="RUN_EXPR" Type="System.Decimal" DbType="Decimal(15,8)" CanBeNull="true" />
+      <Column Name="RUN_TYPE" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Column Name="LOAD_SIZE_QTY" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="RUN_HRS" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="MOVE_HRS" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="DIMENSIONS" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="TRANSIT_DAYS" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="SERVICE_ID" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="SCRAP_YIELD_PCT" Type="System.Decimal" DbType="Decimal(10,6)" CanBeNull="true" />
+      <Column Name="SCRAP_YIELD_TYPE" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Column Name="FIXED_SCRAP_UNITS" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="MINIMUM_MOVE_QTY" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="CALC_START_QTY" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="CALC_END_QTY" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="USER_START_QTY" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="USER_END_QTY" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="OPER_TEMPLATE_ID" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="DRAWING_ID" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="DRAWING_REV_NO" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="DRAWING_PAGE_NO" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="DRAWING_FILE" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="BEGIN_TRACEABILITY" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CAPACITY_USAGE_MAX" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="CAPACITY_USAGE_MIN" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="SPC_QTY" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="SETUP_PER_HR" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="RUN_PER_HR" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="RUN_PER_UNIT" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="RUN_PER_OPER" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="BUR_PER_HR_SETUP" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="BUR_PER_HR_RUN" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="BUR_PER_UNIT_RUN" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="BUR_PERCENT_SETUP" Type="System.Decimal" DbType="Decimal(10,6)" CanBeNull="true" />
+      <Column Name="BUR_PERCENT_RUN" Type="System.Decimal" DbType="Decimal(10,6)" CanBeNull="true" />
+      <Column Name="BUR_PER_OPER" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="EST_ATL_LAB_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="EST_ATL_BUR_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="EST_ATL_SER_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="EST_TTL_MAT_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="EST_TTL_LAB_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="EST_TTL_BUR_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="EST_TTL_SER_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="SCHEDULE_TYPE" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Column Name="MIN_SEGMENT_SIZE" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="PRIVATE_COSTS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SPECIFICATIONS" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="HAS_SPECIFICATIONS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SUPPLIER_ID" Type="System.String" DbType="NVarChar(41)" CanBeNull="true" />
+      <Column Name="SUPPLIER_SERVICE_ID" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="USER_0" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_1" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_2" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_3" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_4" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_5" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_6" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_7" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_8" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_9" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ENGINEERING_MATERIAL" Member="ENGINEERING_MATERIALs">
+    <Type Name="ENGINEERING_MATERIAL">
+      <Column Name="RECORD_IDENTITY" Type="System.String" DbType="NVarChar(12) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RECORD_CREATED" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RECORD_MODIFIED" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RECORD_USER" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="RECORD_VERSION" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PART_ID" Type="System.String" DbType="NVarChar(160) NOT NULL" CanBeNull="false" />
+      <Column Name="ENG_ID" Type="System.String" DbType="NVarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="SUB_ID" Type="System.String" DbType="NVarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="SEQ_NO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PIECE_NO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SUBORD_SUB_ID" Type="System.String" DbType="NVarChar(4)" CanBeNull="true" />
+      <Column Name="SUBORD_PART_ID" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="SUBORD_ENG_ID" Type="System.String" DbType="NVarChar(80)" CanBeNull="true" />
+      <Column Name="DESCRIPTION" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="REFERENCE" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="QTY_PER" Type="System.Decimal" DbType="Decimal(15,8)" CanBeNull="true" />
+      <Column Name="QTY_PER_TYPE" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Column Name="FIXED_QTY" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="SCRAP_PERCENT" Type="System.Decimal" DbType="Decimal(10,6)" CanBeNull="true" />
+      <Column Name="DIMENSIONS" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="DIM_CONSTANT" Type="System.Decimal" DbType="Decimal(15,8)" CanBeNull="true" />
+      <Column Name="USAGE_UM" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="EFFECTIVE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DISCONTINUE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CALC_QTY" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="UNIT_MAT_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="UNIT_LAB_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="UNIT_BUR_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="UNIT_SER_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="FIXED_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="BURDEN_PERCENT" Type="System.Decimal" DbType="Decimal(10,6)" CanBeNull="true" />
+      <Column Name="BURDEN_PER_UNIT" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="UNIT_PRICE" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="DRAWING_ID" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="DRAWING_REV_NO" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="DRAWING_PAGE_NO" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="DRAWING_FILE" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="SUPPLIER_ID" Type="System.String" DbType="NVarChar(41)" CanBeNull="true" />
+      <Column Name="SUPPLIER_PART_ID" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="MFG_NAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MFG_PART_ID" Type="System.String" DbType="NVarChar(160)" CanBeNull="true" />
+      <Column Name="PRIVATE_COSTS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LENGTH" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="WIDTH" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="HEIGHT" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="EST_MAT_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="EST_LAB_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="EST_BUR_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="EST_SER_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="SPECIFICATIONS" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="HAS_SPECIFICATIONS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TOOL_OR_FIXTURE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AUTO_ISSUE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="PHANTOM" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="USER_0" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_1" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_2" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_3" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_4" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_5" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_6" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_7" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_8" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_9" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_10" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_11" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_12" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_13" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_14" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_15" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_16" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_17" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_18" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_19" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_20" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_21" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_22" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_23" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_24" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_25" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_26" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_27" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_28" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_29" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_30" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_31" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_32" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_33" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ENGINEERING_MASTER" Member="ENGINEERING_MASTERs">
+    <Type Name="ENGINEERING_MASTER">
+      <Column Name="RECORD_IDENTITY" Type="System.String" DbType="NVarChar(12) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RECORD_CREATED" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RECORD_MODIFIED" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RECORD_USER" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="RECORD_VERSION" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PART_ID" Type="System.String" DbType="NVarChar(160) NOT NULL" CanBeNull="false" />
+      <Column Name="ENG_ID" Type="System.String" DbType="NVarChar(80) NOT NULL" CanBeNull="false" />
+      <Column Name="SUB_ID" Type="System.String" DbType="NVarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="DESCRIPTION" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="GLOBAL_RANK" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="DESIRED_QTY" Type="System.Decimal" DbType="Decimal(14,4)" CanBeNull="true" />
+      <Column Name="ENGINEERED_BY" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="ENGINEERED_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DRAWING_ID" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="DRAWING_REV_NO" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="DRAWING_FILE" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DRAWING_PAGE_NO" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="PRODUCT_CODE" Type="System.String" DbType="NVarChar(31)" CanBeNull="true" />
+      <Column Name="COMMODITY_CODE" Type="System.String" DbType="NVarChar(31)" CanBeNull="true" />
+      <Column Name="FORWARD_SCHEDULE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ACCOUNT_SET_ID" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="EST_MAT_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="EST_LAB_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="EST_BUR_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="EST_SER_COST" Type="System.Decimal" DbType="Decimal(14,6)" CanBeNull="true" />
+      <Column Name="VARIABLE_TABLE" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="SPECIFICATIONS" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="BITMAP" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="HAS_SPECIFICATIONS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HAS_BITMAP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DIRTY" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="USER_0" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_1" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_2" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_3" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_4" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_5" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_6" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_7" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_8" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_9" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_10" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_11" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_12" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_13" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_14" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_15" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_16" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_17" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_18" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_19" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_20" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_21" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_22" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_23" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_24" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_25" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_26" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_27" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_28" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_29" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_30" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_31" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_32" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="USER_33" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="PRIVATE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="INACTIVE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
