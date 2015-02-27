@@ -8,12 +8,16 @@ namespace PSS.Delta.BusinessObjects
 {
     public class WorkOrder
     {
-        public WorkOrder(string workId)
+        public WorkOrder(string id)
         {
-            WorkId = workId;
+            Id = id;
             Operations = new List<Operation>();
         }
 
+        /// <summary>
+        /// The value that ties the POCO back to the DAL
+        /// </summary>
+        public string Id { get; set; }
         public string WorkId { get; set; }
         public string Description { get; set; }
         public string DrawingId { get; set; }

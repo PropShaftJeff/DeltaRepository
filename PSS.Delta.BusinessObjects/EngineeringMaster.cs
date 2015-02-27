@@ -8,11 +8,16 @@ namespace PSS.Delta.BusinessObjects
 {
     public class EngineeringMaster
     {
-        public EngineeringMaster()
+        public EngineeringMaster(string id)
         {
+            Id = id;
             Operations = new List<Operation>();
         }
 
+        /// <summary>
+        /// The value that ties the POCO back to the DAL
+        /// </summary>
+        public string Id { get; set; }
         public string EngId { get; set; }
         public string Description { get; set; }
         public string DrawingId { get; set; }

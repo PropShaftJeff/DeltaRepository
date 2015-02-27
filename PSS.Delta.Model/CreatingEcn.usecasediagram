@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="7500b891-20c4-484c-af8f-a4fa1568cb7c" name="CreatingEcn" linkedPackageId="3ad86043-937a-46e4-8560-50e5900a2d69" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="1b60a29a-f68e-43f4-8575-d49807e56bf1" name="Engineer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0b3e493c-458d-4675-970c-001bcec78be1" />
+        <targetEnds>
+          <association Id="e45a5b76-6922-4d03-8790-7605758345b0" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="Enter Part Number" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="7ad6aabe-2923-4d0f-a3eb-a1c50b8889a8" LastKnownName="Login to Program" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="03aae4c6-47b6-4f83-84a3-b2a7e7e7ad32" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="adb2da6f-2162-490e-bb1d-ad3ca2ca76c5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="afd35c77-424d-4175-8544-27540e814992" name="Enter Part Number" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9ba1be64-aa51-4343-994f-1cf628134884" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b752dc3d-1e97-4a55-aad6-cf6d15ae7f95" />
+          </association>
+          <association Id="bef4134b-bba1-40fe-987e-27f0004201d1" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="Load Current VJS Info" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="acfa810c-e9ff-4627-99e6-ef9395b832c9" LastKnownName="Create New ECN" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e05deb49-06e1-4073-9d28-217c87bd7a9d" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="de4ed740-898c-45fb-b415-ed578c9f984d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e85b1b87-9649-4663-be85-9ca9324afa0c" name="Load Current VJS Info" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="fd0b26f2-3877-4ac7-bac9-189878be588b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ceee2a33-f661-4148-8bb0-8b3cd8047cbf" />
+          </association>
+          <association Id="f00b63c8-d5a8-433a-9fd0-fed2aa475813" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="Save Updated Info to VJS" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="93b6ce31-7c90-4732-b3df-59e02128dff2" LastKnownName=" Load existing ECN" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c3051856-9a55-494d-a38c-ac9268cbaa06" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9b0d1891-2f03-48be-9c61-abeb6ecb7a58" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cb7b4967-6ff0-4c06-a379-db8faa1bffc1" name="Save Updated Info to VJS" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5594c67b-66f9-4108-a019-8de8ac92d94c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4d7b6fb4-46af-4a43-8795-ad92742e5e1f" />
+          </association>
+          <association Id="c7218c43-0e93-44fd-8419-9f6c2307bd37" isDerived="false" sourceEndRoleName="Engineer" targetEndRoleName="Complete ECN Checklist" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="27f51c9c-610b-449a-a039-c940ef115257" LastKnownName="Add ECN to queue" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9e0e8833-5903-450f-9c83-a4a0cc23e1d8" name="Engineer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2735025b-bbf5-445f-9243-5904bfb12f02" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="712fdc6e-7805-44aa-aaf5-c89415b0171d" name="Complete ECN Checklist" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="824ede48-9d7d-4448-9dc0-775c886a014e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4e851007-3ebf-49c2-a971-61550f89f622" />
+          </association>
+          <association Id="da7e4a65-b3fb-4479-af13-8b23e263b533" isDerived="false" sourceEndRoleName="Engineer" targetEndRoleName="Describe changes made" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="cc2c81a2-64ee-4994-bdc7-02d512c254f3" LastKnownName="View ECN History Stats" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="101232e9-adbd-4d48-85dd-fcfeb568afbd" name="Engineer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ea0c766e-7b81-4473-b7d3-cd96585b5d2d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9efb905b-c8b8-4458-87e1-16f8b0113488" name="Describe changes made" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2c016bdf-09ae-4820-8282-f94f4606bf64" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="68d71b15-7f82-4217-851b-9f0787815db6" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7ad6aabe-2923-4d0f-a3eb-a1c50b8889a8" name="Login to Program" isAbstract="false" isLeaf="false">
+        <description>The process of logging a user into the program.  
+
+Concerned with:
+  1.  Type of user
+  2.  The credentials of a user
+  3.  The premissions the user has</description>
+        <elementDefinition Id="e4336eb9-f31b-4b2c-8267-45f566398e61" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="acfa810c-e9ff-4627-99e6-ef9395b832c9" name="Create New ECN" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="496e5afd-6a96-40e0-80ae-38963e82b7e9" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="93b6ce31-7c90-4732-b3df-59e02128dff2" name=" Load existing ECN" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="dfa22c8f-38ce-40cf-8a3e-cd385b4f0c58" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="27f51c9c-610b-449a-a039-c940ef115257" name="Add ECN to queue" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bb02e210-1007-4951-a664-5f23c986fb9a" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="cc2c81a2-64ee-4994-bdc7-02d512c254f3" name="View ECN History Stats" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="39f164d0-f5a0-41fe-882f-6b52671068c5" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="3ad86043-937a-46e4-8560-50e5900a2d69" name="PSS.Delta.Model">
+    <elementDefinition Id="86557de4-09b9-4955-80f8-87f4b06260e1" />
+    <profileInstances>
+      <packageHasProfileInstances Id="4d973699-465f-4bb2-834c-07a8cbb46636">
+        <profileInstance Id="6ca6eaa1-e258-4ebb-9498-0b259df66409" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="13e310b5-d9c0-4e20-9a37-b40418c465c4">
+        <profileInstance Id="334e803a-576b-4f4e-bfb8-ddff0aedd7e0" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

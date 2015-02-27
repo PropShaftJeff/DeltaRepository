@@ -8,11 +8,16 @@ namespace PSS.Delta.BusinessObjects
 {
     public class Operation
     {
-        public Operation()
+        public Operation(string id)
         {
+            Id = id;
             Materials = new List<Material>();
         }
 
+        /// <summary>
+        /// Ties the POCO back to the DAL
+        /// </summary>
+        public string Id { get; set; }
         public string ResourceId { get; set; }
         public string TemplateId { get; set; }
         public string Description { get; set; }
@@ -24,7 +29,7 @@ namespace PSS.Delta.BusinessObjects
         public string Revision { get; set; }
         public short? NumberOfPages { get; set; }
         public string DrawingFile { get; set; }
-        public int SequenceNumber { get; set; }
+        public int? SequenceNumber { get; set; }
 
         public List<Material> Materials { get; set; }
 

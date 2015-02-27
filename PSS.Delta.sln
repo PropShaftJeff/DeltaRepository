@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSS.Delta.DataLayer", "PSS.Delta\PSS.Delta.DataLayer.csproj", "{B13306D2-DF7F-4D46-AFFB-CA94BEFE10EB}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSS.DeltaConsole", "PSS.DeltaConsole\PSS.DeltaConsole.csproj", "{B7270634-6A29-46ED-9EE1-970C4ADBD028}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSS.Delta.BusinessObjects.Testing", "PSS.Delta.BusinessObjects.Testing\PSS.Delta.BusinessObjects.Testing.csproj", "{18CFB9A3-B266-4F0C-A9AD-427DAA3D3E22}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "PSS.Delta.Model", "PSS.Delta.Model\PSS.Delta.Model.modelproj", "{EE1F29FF-8B4B-4E6B-96D8-7BCE871F1B63}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{18CFB9A3-B266-4F0C-A9AD-427DAA3D3E22}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18CFB9A3-B266-4F0C-A9AD-427DAA3D3E22}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18CFB9A3-B266-4F0C-A9AD-427DAA3D3E22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE1F29FF-8B4B-4E6B-96D8-7BCE871F1B63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE1F29FF-8B4B-4E6B-96D8-7BCE871F1B63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE1F29FF-8B4B-4E6B-96D8-7BCE871F1B63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE1F29FF-8B4B-4E6B-96D8-7BCE871F1B63}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -40,6 +40,11 @@ namespace PSS.Delta.BusinessObjects.Controllers
             vjsManager.GetDataFor(ecn);
         }
 
+        public void SaveEcnData(EngineeringChangeNotice ecn)
+        {
+            EcnManager ecnManager = new EcnManager();
+            EcnManager.Save(ecn);
+        }
         
 
     }

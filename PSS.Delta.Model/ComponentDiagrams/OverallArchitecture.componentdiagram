@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="09289305-cb1d-4e1d-92e6-3279ffee36c6" name="UMLComponentDiagram1" linkedPackageId="71a4dc02-6943-4900-892a-e9656cbb1e23" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="9ba28865-148e-41ba-8ecb-2da0af443f21" name="DataLayer" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e6858f65-769a-4bb3-b645-4e2579da4c1a" />
+        <suppliersInternal>
+          <dependency Id="485b89f1-3b42-48c6-a185-633faf21cb44">
+            <componentMoniker Id="47eae46f-5b9c-4064-b2b6-120d660f9df2" LastKnownName="CommunicationServices" />
+            <elementDefinition Id="41950441-69c0-4a98-ae2d-210ff57887df" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <part Id="1966f9c0-674c-4899-8c08-36307335d6a2" name="EcnDatabase" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="e9f309ef-2ef3-4172-9b9b-9223a05fe2dd" />
+            <type_NamedElement>
+              <componentMoniker Id="a415b044-aee5-49d2-9d37-f991e1a00589" LastKnownName="Component1" />
+            </type_NamedElement>
+          </part>
+          <part Id="72718c1b-a8de-4769-9440-05c772c5f088" name="VjsDatabase" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="42fdc781-e608-48cd-9d15-e9967081da47" />
+            <type_NamedElement>
+              <componentMoniker Id="a165b580-5203-45ee-a65b-ff8e11277e46" LastKnownName="Component3" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="ccedc4ea-5693-4f14-920f-2247dca1b85a" name="BusinessObjects" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4e2cc9be-55d1-488b-ac60-81f20bd248dd" />
+        <suppliersInternal>
+          <dependency Id="b464f4df-c157-4445-8f62-f2631b2900da">
+            <componentMoniker Id="47eae46f-5b9c-4064-b2b6-120d660f9df2" LastKnownName="CommunicationServices" />
+            <elementDefinition Id="82b11403-6f5c-48e5-a53d-54f3ee7bf777" />
+          </dependency>
+          <dependency Id="62b8172e-e832-4921-8731-a6f498b8c856">
+            <componentMoniker Id="9ba28865-148e-41ba-8ecb-2da0af443f21" LastKnownName="DataLayer" />
+            <elementDefinition Id="129f6960-fff4-44d5-b094-7ad5ddd51d37" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <part Id="b0fb0adb-9ece-4148-b756-810beb5e659f" name="EcnObjects" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="b24881af-a9cb-42b3-8a8d-95318878522b" />
+            <type_NamedElement>
+              <componentMoniker Id="a1b0f30c-23d4-494d-b71f-c20f0f172699" LastKnownName="Component4" />
+            </type_NamedElement>
+          </part>
+          <part Id="932cc679-22ff-42c1-b462-ef2edde7ee2e" name="VjsObjects" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="a69efc36-f110-4849-a74f-33d90c12d114" />
+            <type_NamedElement>
+              <componentMoniker Id="49faa3dd-4a4c-43d6-8c9e-8022370e2ffe" LastKnownName="Component5" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="a415b044-aee5-49d2-9d37-f991e1a00589" name="Component1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e3e9715b-2ad4-44fe-a47f-39816313ff50" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="a165b580-5203-45ee-a65b-ff8e11277e46" name="Component3" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="039cfda7-e3a6-49e9-a533-b6abfba675e3" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="a1b0f30c-23d4-494d-b71f-c20f0f172699" name="Component4" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="44e51f25-1368-40ff-93aa-5ce8ec9df48f" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="49faa3dd-4a4c-43d6-8c9e-8022370e2ffe" name="Component5" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="34f70703-b20a-408a-8f3b-6b164527d8ee" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="47eae46f-5b9c-4064-b2b6-120d660f9df2" name="CommunicationServices" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="cfa083db-d704-478e-9793-a7e46e640ef3" />
+        <ownedAttributesInternal>
+          <part Id="2d5b2a1b-d8cf-40b5-af13-7b44fd01a6e6" name="ReminderService" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="83a3a7c0-a955-4e7f-a54e-89f83155e99d" />
+            <type_NamedElement>
+              <componentMoniker Id="926b643a-d27a-4a37-8aeb-81e15bed06fa" LastKnownName="Component6" />
+            </type_NamedElement>
+          </part>
+          <part Id="707ba7e9-5e39-4857-90e4-6ef8b1f37269" name="EmailService" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="bf4805ea-15ad-4c90-8158-6b26a1d516b0" />
+            <type_NamedElement>
+              <componentMoniker Id="c1e8dd92-3d12-483f-9abe-14d724338a4c" LastKnownName="Component7" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="926b643a-d27a-4a37-8aeb-81e15bed06fa" name="Component6" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5570347a-b893-4cf7-9cbf-6adb031650d0" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="c1e8dd92-3d12-483f-9abe-14d724338a4c" name="Component7" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="30fcdc21-1eff-4ffe-b3b0-bb8acdb10a09" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="693018c8-c450-44e5-9c2c-61bab9842fe3" name="Component9" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a78ddfb9-70cd-46d7-a862-4d15323bc873" />
+        <suppliersInternal>
+          <dependency Id="66338c0e-7e17-467f-9a6e-5746bf8fc8a2">
+            <componentMoniker Id="ccedc4ea-5693-4f14-920f-2247dca1b85a" LastKnownName="BusinessObjects" />
+            <elementDefinition Id="1c6de973-1962-4f57-ade5-03217a8e3288" />
+          </dependency>
+          <dependency Id="9b78f2a3-82dd-46e1-9dd9-00f5c62c6bbd">
+            <componentMoniker Id="47eae46f-5b9c-4064-b2b6-120d660f9df2" LastKnownName="CommunicationServices" />
+            <elementDefinition Id="ce3670b2-527e-43bd-b50f-d10be3ac9fb7" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <part Id="ff33f839-3cec-4025-bb64-0f2d37d78455" name="UserInterface" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="e813ef51-0aef-4a66-aa7d-1f2e3eced4e0" />
+            <type_NamedElement>
+              <componentMoniker Id="2eb6b847-1dce-4a14-a71c-9300ca68c8ac" LastKnownName="Component10" />
+            </type_NamedElement>
+          </part>
+          <part Id="d55a5e86-f340-4df8-86d4-3f8c6756050c" name="ViewModels" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="16d7cb59-a764-445f-b8e1-680dc9b7d9ac" />
+            <type_NamedElement>
+              <componentMoniker Id="2b388d73-1f2a-47f9-96a8-9fd3b0bd1f93" LastKnownName="Component11" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="2eb6b847-1dce-4a14-a71c-9300ca68c8ac" name="Component10" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6520e37d-2fe7-481b-8d42-29277f7695b4" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="2b388d73-1f2a-47f9-96a8-9fd3b0bd1f93" name="Component11" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="10762d0f-324e-41e4-b89e-ec8216243a2c" />
+      </component>
+    </componentModelHasComponents>
+  </packagedElements>
+  <package Id="71a4dc02-6943-4900-892a-e9656cbb1e23" name="PSS.Delta.Model">
+    <elementDefinition Id="86557de4-09b9-4955-80f8-87f4b06260e1" />
+    <profileInstances>
+      <packageHasProfileInstances Id="cc0f04bc-7c68-4e96-a255-ea2df9224717">
+        <profileInstance Id="08741940-2e9a-48ce-85b1-65b42e98e64d" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="381a0aa0-7354-4d53-b28a-c3492193be14">
+        <profileInstance Id="9ad58c44-ea10-4bab-8b9c-7ded1432e667" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</componentModel>

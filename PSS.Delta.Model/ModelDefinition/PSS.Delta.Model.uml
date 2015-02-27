@@ -1,0 +1,714 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="86557de4-09b9-4955-80f8-87f4b06260e1"
+  name="PSS.Delta.Model" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="0b3e493c-458d-4675-970c-001bcec78be1"
+        name="Engineer"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="b752dc3d-1e97-4a55-aad6-cf6d15ae7f95"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="Enter Part Number"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="e4336eb9-f31b-4b2c-8267-45f566398e61"
+              LastKnownName="Login to Program"
+              LastKnownLocation="PSS.Delta.Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="adb2da6f-2162-490e-bb1d-ad3ca2ca76c5"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9ba1be64-aa51-4343-994f-1cf628134884"
+                  name="Enter Part Number"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="182d728a-5786-4f7f-8a1f-92c9a033d7d9"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="Retrieve Saved ECN"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="9c26925d-e55e-4897-89bd-651fad86294b"
+              LastKnownName="Retrieve Saved ECN"
+              LastKnownLocation="PSS.Delta.Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d62ec46d-75f3-4041-acbd-1a0d06a2ae32"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4acd83dd-2d9a-4525-a7f9-4a86ce60b93e"
+                  name="Retrieve Saved ECN"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="ceee2a33-f661-4148-8bb0-8b3cd8047cbf"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="Load Current VJS Info"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="496e5afd-6a96-40e0-80ae-38963e82b7e9"
+              LastKnownName="Create New ECN"
+              LastKnownLocation="PSS.Delta.Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="de4ed740-898c-45fb-b415-ed578c9f984d"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fd0b26f2-3877-4ac7-bac9-189878be588b"
+                  name="Load Current VJS Info"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="4d7b6fb4-46af-4a43-8795-ad92742e5e1f"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="Save Updated Info to VJS"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="dfa22c8f-38ce-40cf-8a3e-cd385b4f0c58"
+              LastKnownName=" Load existing ECN"
+              LastKnownLocation="PSS.Delta.Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9b0d1891-2f03-48be-9c61-abeb6ecb7a58"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5594c67b-66f9-4108-a019-8de8ac92d94c"
+                  name="Save Updated Info to VJS"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="4e851007-3ebf-49c2-a971-61550f89f622"
+            isDerived="false"
+            sourceEndRoleName="Engineer"
+            targetEndRoleName="Complete ECN Checklist"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="bb02e210-1007-4951-a664-5f23c986fb9a"
+              LastKnownName="Add ECN to queue"
+              LastKnownLocation="PSS.Delta.Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2735025b-bbf5-445f-9243-5904bfb12f02"
+                  name="Engineer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="824ede48-9d7d-4448-9dc0-775c886a014e"
+                  name="Complete ECN Checklist"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="5dd72bc6-63e0-4f64-9f35-6e725c1f454a"
+            isDerived="false"
+            sourceEndRoleName="Engineer"
+            targetEndRoleName="Inform Parties of Changes"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="02ca4b8c-535d-48e1-b7ee-59100014d28f"
+              LastKnownName="Inform Parties of Changes"
+              LastKnownLocation="PSS.Delta.Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e13021d4-01f2-4390-a73c-9c2ca9a078f5"
+                  name="Engineer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7bbce87d-65b1-4f9b-b223-9e4eb024f688"
+                  name="Inform Parties of Changes"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="68d71b15-7f82-4217-851b-9f0787815db6"
+            isDerived="false"
+            sourceEndRoleName="Engineer"
+            targetEndRoleName="Describe changes made"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="39f164d0-f5a0-41fe-882f-6b52671068c5"
+              LastKnownName="View ECN History Stats"
+              LastKnownLocation="PSS.Delta.Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ea0c766e-7b81-4473-b7d3-cd96585b5d2d"
+                  name="Engineer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2c016bdf-09ae-4820-8282-f94f4606bf64"
+                  name="Describe changes made"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e4336eb9-f31b-4b2c-8267-45f566398e61"
+        name="Login to Program"
+        isAbstract="false"
+        isLeaf="false">
+        <description>The process of logging a user into the program.  
+
+Concerned with:
+  1.  Type of user
+  2.  The credentials of a user
+  3.  The premissions the user has</description>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9c26925d-e55e-4897-89bd-651fad86294b"
+        name="Retrieve Saved ECN"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="496e5afd-6a96-40e0-80ae-38963e82b7e9"
+        name="Create New ECN"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="dfa22c8f-38ce-40cf-8a3e-cd385b4f0c58"
+        name=" Load existing ECN"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="bb02e210-1007-4951-a664-5f23c986fb9a"
+        name="Add ECN to queue"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="02ca4b8c-535d-48e1-b7ee-59100014d28f"
+        name="Inform Parties of Changes"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="39f164d0-f5a0-41fe-882f-6b52671068c5"
+        name="View ECN History Stats"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="a7542ab3-65f9-4b06-ad66-e8f48234c636"
+        name="Business Layer"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="b801b90d-dede-4789-8fab-7f2d5efe2ff6"
+        name="Data Layer"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="e6858f65-769a-4bb3-b645-4e2579da4c1a"
+        name="DataLayer"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="41950441-69c0-4a98-ae2d-210ff57887df">
+            <componentMoniker
+              Id="cfa083db-d704-478e-9793-a7e46e640ef3"
+              LastKnownName="CommunicationServices"
+              LastKnownLocation="PSS.Delta.Model.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <part
+            Id="e9f309ef-2ef3-4172-9b9b-9223a05fe2dd"
+            name="EcnDatabase"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="e3e9715b-2ad4-44fe-a47f-39816313ff50"
+                LastKnownName="Component1"
+                LastKnownLocation="PSS.Delta.Model.uml" />
+            </type_NamedElement>
+          </part>
+          <part
+            Id="42fdc781-e608-48cd-9d15-e9967081da47"
+            name="VjsDatabase"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="039cfda7-e3a6-49e9-a533-b6abfba675e3"
+                LastKnownName="Component3"
+                LastKnownLocation="PSS.Delta.Model.uml" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="e84c428e-4343-4b7a-bc61-ae40d0bf3a98"
+        name="Component2"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="4e2cc9be-55d1-488b-ac60-81f20bd248dd"
+        name="BusinessObjects"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="82b11403-6f5c-48e5-a53d-54f3ee7bf777">
+            <componentMoniker
+              Id="cfa083db-d704-478e-9793-a7e46e640ef3"
+              LastKnownName="CommunicationServices"
+              LastKnownLocation="PSS.Delta.Model.uml" />
+          </dependency>
+          <dependency
+            Id="129f6960-fff4-44d5-b094-7ad5ddd51d37">
+            <componentMoniker
+              Id="e6858f65-769a-4bb3-b645-4e2579da4c1a"
+              LastKnownName="DataLayer"
+              LastKnownLocation="PSS.Delta.Model.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <part
+            Id="b24881af-a9cb-42b3-8a8d-95318878522b"
+            name="EcnObjects"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="44e51f25-1368-40ff-93aa-5ce8ec9df48f"
+                LastKnownName="Component4"
+                LastKnownLocation="PSS.Delta.Model.uml" />
+            </type_NamedElement>
+          </part>
+          <part
+            Id="a69efc36-f110-4849-a74f-33d90c12d114"
+            name="VjsObjects"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="34f70703-b20a-408a-8f3b-6b164527d8ee"
+                LastKnownName="Component5"
+                LastKnownLocation="PSS.Delta.Model.uml" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="71e111fb-05fa-4beb-9e3b-509b37ff651d"
+        name="UserInterface"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="e3e9715b-2ad4-44fe-a47f-39816313ff50"
+        name="Component1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="039cfda7-e3a6-49e9-a533-b6abfba675e3"
+        name="Component3"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="44e51f25-1368-40ff-93aa-5ce8ec9df48f"
+        name="Component4"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="34f70703-b20a-408a-8f3b-6b164527d8ee"
+        name="Component5"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="cfa083db-d704-478e-9793-a7e46e640ef3"
+        name="CommunicationServices"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <part
+            Id="83a3a7c0-a955-4e7f-a54e-89f83155e99d"
+            name="ReminderService"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="5570347a-b893-4cf7-9cbf-6adb031650d0"
+                LastKnownName="Component6"
+                LastKnownLocation="PSS.Delta.Model.uml" />
+            </type_NamedElement>
+          </part>
+          <part
+            Id="bf4805ea-15ad-4c90-8158-6b26a1d516b0"
+            name="EmailService"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="30fcdc21-1eff-4ffe-b3b0-bb8acdb10a09"
+                LastKnownName="Component7"
+                LastKnownLocation="PSS.Delta.Model.uml" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="5570347a-b893-4cf7-9cbf-6adb031650d0"
+        name="Component6"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="30fcdc21-1eff-4ffe-b3b0-bb8acdb10a09"
+        name="Component7"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="47d53d96-21c2-4341-8fb3-98a7f69f5c78"
+        name="Component8"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="2d1eb329-aa12-4075-b7a1-92daf84d9a45"
+        name="ViewModels"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="a78ddfb9-70cd-46d7-a862-4d15323bc873"
+        name="Component9"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="1c6de973-1962-4f57-ade5-03217a8e3288">
+            <componentMoniker
+              Id="4e2cc9be-55d1-488b-ac60-81f20bd248dd"
+              LastKnownName="BusinessObjects"
+              LastKnownLocation="PSS.Delta.Model.uml" />
+          </dependency>
+          <dependency
+            Id="ce3670b2-527e-43bd-b50f-d10be3ac9fb7">
+            <componentMoniker
+              Id="cfa083db-d704-478e-9793-a7e46e640ef3"
+              LastKnownName="CommunicationServices"
+              LastKnownLocation="PSS.Delta.Model.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <part
+            Id="e813ef51-0aef-4a66-aa7d-1f2e3eced4e0"
+            name="UserInterface"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="6520e37d-2fe7-481b-8d42-29277f7695b4"
+                LastKnownName="Component10"
+                LastKnownLocation="PSS.Delta.Model.uml" />
+            </type_NamedElement>
+          </part>
+          <part
+            Id="16d7cb59-a764-445f-b8e1-680dc9b7d9ac"
+            name="ViewModels"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="10762d0f-324e-41e4-b89e-ec8216243a2c"
+                LastKnownName="Component11"
+                LastKnownLocation="PSS.Delta.Model.uml" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="6520e37d-2fe7-481b-8d42-29277f7695b4"
+        name="Component10"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="10762d0f-324e-41e4-b89e-ec8216243a2c"
+        name="Component11"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

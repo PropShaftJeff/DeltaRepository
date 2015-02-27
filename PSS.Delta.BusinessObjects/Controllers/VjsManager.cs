@@ -63,9 +63,9 @@ namespace PSS.Delta.BusinessObjects.Controllers
                 .ToList();
 
             //get materials and operations for each work order
-            foreach (SHOPFLOOR_WORK_ORDER wo in vjsWorkOrder)
+            foreach (SHOPFLOOR_WORK_ORDER dbWorkOrder in vjsWorkOrder)
             {
-                string workId = wo.WORK_ID;
+                string workId = dbWorkOrder.WORK_ID;
 
                 //get all operations for the particular work order.
                 IQueryable<SHOPFLOOR_OPERATION> operations = 
@@ -76,19 +76,20 @@ namespace PSS.Delta.BusinessObjects.Controllers
                 List<SHOPFLOOR_MATERIAL> materials = _context.SHOPFLOOR_MATERIALs.Where(mat => mat.WORK_ID == workId).ToList();
 
                 //create the work order object.
-                WorkOrder workOrder = new WorkOrder(workId);
-                workOrder.Description = wo.DESCRIPTION;
-                workOrder.DrawingId = wo.DRAWING_ID;
-                workOrder.GlobalRank = wo.GLOBAL_RANK;
-                workOrder.Notes = wo.NOTES;
-                workOrder.NumberOfPages = wo.DRAWING_PAGE_NO;
-                workOrder.Revision = wo.DRAWING_REV_NO;
-                workOrder.Specifications = wo.SPECIFICATIONS;
+                WorkOrder workOrder = new WorkOrder(dbWorkOrder.RECORD_IDENTITY);
+                workOrder.WorkId = dbWorkOrder.WORK_ID;
+                workOrder.Description = dbWorkOrder.DESCRIPTION;
+                workOrder.DrawingId = dbWorkOrder.DRAWING_ID;
+                workOrder.GlobalRank = dbWorkOrder.GLOBAL_RANK;
+                workOrder.Notes = dbWorkOrder.NOTES;
+                workOrder.NumberOfPages = dbWorkOrder.DRAWING_PAGE_NO;
+                workOrder.Revision = dbWorkOrder.DRAWING_REV_NO;
+                workOrder.Specifications = dbWorkOrder.SPECIFICATIONS;
 
                 foreach (SHOPFLOOR_OPERATION op in operations)
                 {
                     //create operations
-                    Operation woOperation = new Operation();
+                    Operation woOperation = new Operation(op.RECORD_IDENTITY);
                     woOperation.Description = op.DESCRIPTION;
                     woOperation.DrawingFile = op.DRAWING_FILE;
                     woOperation.DrawingId = op.DRAWING_ID;
@@ -108,7 +109,7 @@ namespace PSS.Delta.BusinessObjects.Controllers
                     foreach (SHOPFLOOR_MATERIAL mat in relaventMaterials)
                     {
                         // create materials
-                        Material woMaterial = new Material();
+                        Material woMaterial = new Material(mat.RECORD_IDENTITY);
                         woMaterial.Description = mat.DESCRIPTION;
                         woMaterial.DrawingFile = mat.DRAWING_FILE;
                         woMaterial.DrawingId = mat.DRAWING_ID;
@@ -161,7 +162,7 @@ namespace PSS.Delta.BusinessObjects.Controllers
 
                 foreach (PURCHASING_ORDER_LINE vjsPoLine in relaventLineItems)
                 {
-                    PoLine lineItem = new PoLine();
+                    PoLine lineItem = new PoLine(vjsPoLine.RECORD_IDENTITY);
                     lineItem.Description = vjsPoLine.DESCRIPTION;
                     lineItem.DrawingId = vjsPoLine.DRAWING_ID;
                     lineItem.LineStatus = vjsPoLine.LINE_STATUS;
@@ -197,7 +198,7 @@ namespace PSS.Delta.BusinessObjects.Controllers
             foreach (SALES_SALES_ORDER vjsSalesOrder in vjsSalesOrders)
             {
                 // create sales order.
-                SalesOrder so = new SalesOrder(vjsSalesOrder.ID);
+                SalesOrder so = new SalesOrder(vjsSalesOrder.RECORD_IDENTITY);
                 so.Customer = vjsSalesOrder.CUSTOMER_ID;
                 so.OrderDate = vjsSalesOrder.ORDER_DATE;
 
@@ -207,7 +208,7 @@ namespace PSS.Delta.BusinessObjects.Controllers
 
                 foreach (SALES_ORDER_LINE vjsLineItem in relaventLineItems)
                 {
-                    SoLine lineItem = new SoLine();
+                    SoLine lineItem = new SoLine(vjsLineItem.RECORD_IDENTITY);
                     lineItem.LineNo = vjsLineItem.LINE_NO;
                     lineItem.Description = vjsLineItem.DESCRIPTION;
                     lineItem.DrawingId = vjsLineItem.DRAWING_ID;
@@ -244,7 +245,7 @@ namespace PSS.Delta.BusinessObjects.Controllers
             foreach (ENGINEERING_MASTER vjsMaster in vjsMasters)
             {
                 // Create an engineering master.
-                EngineeringMaster master = new EngineeringMaster();
+                EngineeringMaster master = new EngineeringMaster(vjsMaster.RECORD_IDENTITY);
                 master.Description = vjsMaster.DESCRIPTION;
                 master.DrawingId = vjsMaster.DRAWING_ID;
                 master.EngId = vjsMaster.ENG_ID;
@@ -267,7 +268,7 @@ namespace PSS.Delta.BusinessObjects.Controllers
 
                 foreach (ENGINEERING_OPERATION vjsOp in vjsOperations)
                 {
-                    Operation op = new Operation();
+                    Operation op = new Operation(vjsOp.RECORD_IDENTITY);
                     op.Description = vjsOp.DESCRIPTION;
                     op.DrawingFile = vjsOp.DRAWING_FILE;
                     op.DrawingId = vjsOp.DRAWING_ID;
@@ -288,7 +289,7 @@ namespace PSS.Delta.BusinessObjects.Controllers
 
                     foreach (ENGINEERING_MATERIAL vjsMaterial in relaventMaterials)
                     {
-                        Material material = new Material();
+                        Material material = new Material(vjsMaterial.RECORD_IDENTITY);
                         material.Description = vjsMaterial.DESCRIPTION;
                         material.DrawingFile = vjsMaterial.DRAWING_FILE;
                         material.DrawingId = vjsMaterial.DRAWING_ID;

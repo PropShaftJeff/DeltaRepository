@@ -14,7 +14,11 @@ namespace PSS.Delta.BusinessObjects
             LineItems = new List<SoLine>();
         }
 
+        /// <summary>
+        /// The Id that ties POCO back to the DAL
+        /// </summary>
         public string Id { get; set; }
+        public string SalesId { get; set; }
         public DateTime OrderDate { get; set; }
         public string Customer { get; set; }
         public List<SoLine> LineItems { get; set; }

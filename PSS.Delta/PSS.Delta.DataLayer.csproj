@@ -78,13 +78,13 @@
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="EcnDatabase.dbml.layout">
-      <DependentUpon>EcnDatabase.dbml</DependentUpon>
+    <None Include="VjsDatabase.dbml.layout">
+      <DependentUpon>VjsDatabase.dbml</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="VjsDatabase.dbml.layout">
-      <DependentUpon>VjsDatabase.dbml</DependentUpon>
+    <None Include="EcnDatabase.dbml.layout">
+      <DependentUpon>EcnDatabase.dbml</DependentUpon>
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

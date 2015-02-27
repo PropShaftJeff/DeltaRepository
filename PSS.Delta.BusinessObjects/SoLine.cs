@@ -8,6 +8,15 @@ namespace PSS.Delta.BusinessObjects
 {
     public class SoLine
     {
+        public SoLine(string id)
+        {
+            Id = id;
+        }
+
+        /// <summary>
+        /// The Id value that maps the POCO back the DAL
+        /// </summary>
+        public string Id { get; set; }
         public decimal? OrderQty { get; set; }
         public decimal? ShippedQty { get; set; }
         public string Description { get; set; }
