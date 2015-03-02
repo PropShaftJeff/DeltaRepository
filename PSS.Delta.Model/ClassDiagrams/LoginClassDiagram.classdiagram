@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="806b122c-73a8-4ae4-a9b4-80fefa301747" name="LoginClassDiagram" linkedPackageId="9bbdb066-7b55-425b-97b5-e327884bf39f" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="89b5ff66-36c5-42ca-9a66-f6971fb96928">
+      <elementDefinition Id="e8f05a71-3be4-4a79-959d-2b4c9588b4d9" />
+      <body>End of login cycle</body>
+    </comment>
+    <comment Id="c4b496ea-3195-493a-8c69-47eb8a2ce882">
+      <elementDefinition Id="c23749e8-faf7-43a4-9ade-91e203760d1d" />
+      <body>Open Program
+</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8f1902cf-5d9d-4361-997e-83eb2ff12b13" name="Employee" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="cfb8b33c-a8af-4e12-81fe-b44f66f58e1a" />
+        <targetEnds>
+          <association Id="a51d7e91-8d72-4172-9a46-55a716b44200" isDerived="false" sourceEndRoleName="Employee" targetEndRoleName="Credentials" isLeaf="false" isAbstract="false">
+            <classMoniker Id="639de06a-06eb-4088-98a4-3bd05c8ac061" LastKnownName="Credentials" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="775af690-0668-4895-8c49-256ce9766e07" name="Employee" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d5eab871-4569-40c3-bfd6-265ef08324f8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7c137f02-5fd9-4344-b2c2-6dfe21347f7d" name="Credentials" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="aa2f11a9-cd4a-448f-9e23-b17907f4ba18" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ea6d920c-f376-4b20-a2e7-8f797d45baf9" />
+          </association>
+          <association Id="33cf6014-07aa-46cb-b4ea-bc5dfe962752" isDerived="false" sourceEndRoleName="Employee" targetEndRoleName="UserSettings" isLeaf="false" isAbstract="false">
+            <classMoniker Id="665d4a4e-013c-418a-9121-280469f1caf3" LastKnownName="UserSettings" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d01d383c-6b4b-4f86-b35d-be1ca30b8f16" name="Employee" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="969f491e-edbf-4484-b01f-5d43160a315f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="41bfa9a3-8c8c-4eb7-9c3b-f91de407166c" name="UserSettings" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cbaf5962-d796-47ed-a2af-3b9d49ae61c1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="55565c33-4232-4b67-b856-97d171a94c9d" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="50f13bc1-0897-4ab8-958e-16ca0e18c5b9" name="firstName" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="bdf07836-7efd-4a5d-acde-7f1223aa6b07" />
+          </property>
+          <property Id="107377c3-d983-4d1a-ab7a-a12b118bf4d5" name="credentials" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b7ff2606-1d1b-4269-bf74-acd960293747" />
+          </property>
+          <property Id="5feba578-6c12-4bb1-9e23-af8dbf7fe0d9" name="emailAddress" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="09c8cb0c-48b9-4783-a07d-71dfce17235f" />
+          </property>
+          <property Id="6a67937e-2dbb-467e-8ce1-39aa9cc81881" name="lastName" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c89d6a22-6354-41b7-8d2c-0c96a392bfa3" />
+          </property>
+          <property Id="fdc49444-54ff-47f8-ad27-bd823f54e253" name="settings" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2b9bad0c-0719-4975-84fc-527768dca991" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="636b0efd-76e1-4e5d-945b-3da05a5690f7" name="Login" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2af9f2ef-b35e-4fba-b130-2d50cf74ab14" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="639de06a-06eb-4088-98a4-3bd05c8ac061" name="Credentials" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="021138f9-239b-4bb4-b255-d8e97d6da569" />
+        <suppliersInternal>
+          <dependency Id="0a235fbf-2d9a-4490-bd1a-041514f39f7a">
+            <classMoniker Id="73b3f459-78b1-41ba-aec1-9324cbb29170" LastKnownName="CredentialsDb" />
+            <elementDefinition Id="3ee124b3-5573-4581-968f-564a30a8cd50" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="01f5e13e-32f4-48c8-811b-36c14a2c4309" name="userName" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a4739491-c642-420a-935e-da5d48a4bd99" />
+          </property>
+          <property Id="7a841c60-155d-4a3a-a6a5-0cc2add7b342" name="password" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="bf467bda-23c0-4966-a04e-456c76d47e2c" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="ebe72aec-5cc4-45b3-87e7-f97a3107d98f" name="Validate" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="437440ac-c459-477d-83d8-7c6bec0202ef" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ad833e6c-7d79-4887-b4db-84844599510b" name="EditorCredentials" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="57d6b27d-6e66-49f7-b557-9a00e96e3884" />
+        <generalsInternal>
+          <generalization Id="6023416c-5751-4081-b009-8ec3729a9f89" isSubstitutable="false">
+            <classMoniker Id="639de06a-06eb-4088-98a4-3bd05c8ac061" LastKnownName="Credentials" />
+            <elementDefinition Id="1850b6c1-d8c4-40de-8dd8-46463b34476f" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8395164b-1a38-4f7d-98bc-e741943befe4" name="LoginViewModel" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7fd4d9a5-0c85-4489-a998-589ed5dc9960" />
+        <suppliersInternal>
+          <dependency Id="c835e2c4-59c3-42f1-9ed3-5ea04e3b60a2">
+            <classMoniker Id="639de06a-06eb-4088-98a4-3bd05c8ac061" LastKnownName="Credentials" />
+            <elementDefinition Id="ef6b89a4-ba62-4630-84fd-aa43cf311dd3" />
+          </dependency>
+          <dependency Id="2c982652-811a-4659-8c65-8e49250f03b5">
+            <classMoniker Id="4f591493-43d3-45af-8477-b7f56a5a67c3" LastKnownName="ApplicationViewModel" />
+            <elementDefinition Id="f1f2eff5-e8a4-4efe-aae2-81b466444892" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="100265b0-d1f3-4fd6-a0db-b4ead70c8261" name="string username" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="461867f6-f586-41f7-849b-ffc0c28545c9" />
+          </property>
+          <property Id="1ead0cd3-17ff-4151-ae44-8b0cd96fdb5e" name="string password" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6543031c-e2e1-4958-a9d8-be6b9aa9ffc9" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="99b25c59-59cc-409c-90df-cf26cf88800f" name="CreateCredentials" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4f5fd98f-d9b8-4535-9f67-feaee2d22a3c" />
+          </operation>
+          <operation Id="9aed4b46-d91d-47ba-8392-a7025f72a6de" name="CreateEmployee" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1b4932d2-ca5a-4ab3-a640-06850812aef0" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ca00daba-feb8-4e1c-a2e7-3984dd21fad1" name="Credentials" direction="In" isUnique="false">
+                  <elementDefinition Id="214c7143-e564-464b-9b2c-58ea61738cfe" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="70d17595-f7fa-4ecc-ac23-1b03f10ff1e1" name="LoadApplication" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1e098e9b-25af-41f0-8ffd-8233a56ebd2f" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="89b0f0c4-77d7-4168-917d-c7c21441c218" name="ReadOnlyCredentials" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4b00311a-2429-41da-8a56-62a339f4d126" />
+        <generalsInternal>
+          <generalization Id="50902add-2d83-481c-92a1-789171e38819" isSubstitutable="false">
+            <classMoniker Id="639de06a-06eb-4088-98a4-3bd05c8ac061" LastKnownName="Credentials" />
+            <elementDefinition Id="0e21d043-808b-48c7-92a9-dc894c1df256" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0214325a-3263-4b39-9431-8dec8ae484e4" name="AdminCredentials" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="fae745ed-917e-4416-a226-57c3f1a7669c" />
+        <generalsInternal>
+          <generalization Id="0276437f-c747-4d02-ab10-97c9335eed28" isSubstitutable="false">
+            <classMoniker Id="639de06a-06eb-4088-98a4-3bd05c8ac061" LastKnownName="Credentials" />
+            <elementDefinition Id="95956ea6-b7c2-409c-83e1-82f911cc7d9a" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="665d4a4e-013c-418a-9121-280469f1caf3" name="UserSettings" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <description>Used for any type of user preferences</description>
+        <elementDefinition Id="f07b5696-559a-4f6a-916a-164397f0dbca" />
+        <ownedOperationsInternal>
+          <operation Id="0cd30d19-f6a7-427b-ad9a-e6e88f92038f" name="CreateDefault" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f32dffda-ac7d-444e-97ab-cf77e1b6ee77" />
+          </operation>
+          <operation Id="fc63d2f3-4861-4a2b-a9e0-2f6e8e6044f4" name="Load" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="fcbb38b6-8968-48cf-bc2c-55463aa61ee8" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="73b3f459-78b1-41ba-aec1-9324cbb29170" name="CredentialsDb" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="940554c6-7d29-4d88-b136-e9313f8d3c69" />
+        <ownedOperationsInternal>
+          <operation Id="47b4d9d6-a9ac-4135-9dc6-494592613191" name="ValidateCredentials" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="bb2ca295-1f33-45ea-9920-7e6c41c86352" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4f591493-43d3-45af-8477-b7f56a5a67c3" name="ApplicationViewModel" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="cbd1bbe9-bf17-4c71-93cc-4c2012fd3fa4" />
+        <targetEnds>
+          <association Id="07e56347-3d4c-46cb-9f3f-6c53732a7664" isDerived="false" sourceEndRoleName="ApplicationViewModel" targetEndRoleName="Employee" isLeaf="false" isAbstract="false">
+            <classMoniker Id="8f1902cf-5d9d-4361-997e-83eb2ff12b13" LastKnownName="Employee" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2ceeea23-1f1b-4479-9cb1-971a44a0e76c" name="ApplicationViewModel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9f5b58ce-be62-4c85-ad85-f6e1ab70159c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f8ac2b09-2df5-4782-b650-34739dcda5ed" name="Employee" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2a625ced-b431-49b4-bba9-2d34c5a7c8ca" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e6cd8791-eeb5-4354-aa80-29237b1ad3dc" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="612c9b61-c9b5-4230-b695-b92fc448bb81" name="employee" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="51eab0ff-badb-4915-a8ea-1fcc06d3bab5" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5055d218-6ac5-4005-a395-7d2fd41a555e" LastKnownName="Employee" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="672e3f70-8f56-4deb-9a3c-64e947d61348" name="LoadApplication" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9f877a87-94ea-4442-bd18-759b7ac1416f" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="5055d218-6ac5-4005-a395-7d2fd41a555e" name="Employee" isAbstract="false" isLeaf="false" cachedFullName="PSS.Delta.Model::Employee">
+        <elementDefinition Id="cfb8b33c-a8af-4e12-81fe-b44f66f58e1a" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="9bbdb066-7b55-425b-97b5-e327884bf39f" name="PSS.Delta.Model">
+    <elementDefinition Id="86557de4-09b9-4955-80f8-87f4b06260e1" />
+    <profileInstances>
+      <packageHasProfileInstances Id="1403a527-1f73-4df4-823e-08a8d36c2e94">
+        <profileInstance Id="b1bbd24b-657f-47a1-83ae-d2158511e39c" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="2f7d5dd6-a289-4ef8-b7bf-0afd5924f902">
+        <profileInstance Id="32588611-5ea0-4222-ac5a-f2724b721cb8" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

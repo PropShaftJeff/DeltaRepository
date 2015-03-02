@@ -22,6 +22,20 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
+    <Content Include="ClassDiagrams\CreateEcnClassDiagram.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ClassDiagrams\CreateEcnClassDiagram.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ClassDiagrams\CreateEcnClassDiagram.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="ClassDiagrams\LoginClassDiagram.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ClassDiagrams\LoginClassDiagram.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ClassDiagrams\LoginClassDiagram.classdiagram</DependentUpon>
+    </Content>
     <Content Include="ComponentDiagrams\OverallArchitecture.componentdiagram">
       <SubType>Content</SubType>
     </Content>
@@ -36,10 +50,19 @@
       <SubType>Content</SubType>
       <DependentUpon>CreatingEcn.usecasediagram</DependentUpon>
     </Content>
+    <Content Include="Sequence Diagrams\LoginSequence.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Sequence Diagrams\LoginSequence.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Sequence Diagrams\LoginSequence.sequencediagram</DependentUpon>
+    </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\PSS.Delta.Model.uml">
       <SubType>Content</SubType>
     </Content>
     <Folder Include="ComponentDiagrams" />
+    <Folder Include="ClassDiagrams" />
+    <Folder Include="Sequence Diagrams" />
   </ItemGroup>
 </Project>
